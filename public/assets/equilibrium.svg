@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Glowing equilibrium cube">
+  <defs>
+    <linearGradient id="background" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#071d42"/>
+      <stop offset=".66" stop-color="#006398"/>
+      <stop offset="1" stop-color="#0874a2"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#31e1d8"/>
+      <stop offset=".52" stop-color="#e34f9a"/>
+      <stop offset="1" stop-color="#9b4ae0"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#35d8db"/>
+      <stop offset=".55" stop-color="#a546ce"/>
+      <stop offset="1" stop-color="#ff758b"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#193e76"/>
+      <stop offset="1" stop-color="#121f52"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="19"/>
+    </filter>
+    <filter id="reflection" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#background)"/>
+  <path d="M173 474h250" stroke="#33f2ed" stroke-opacity=".65" stroke-width="3"/>
+  <path d="m300 406 70-42 66 36-72 49z" fill="#ff7b9e" opacity=".8" filter="url(#glow)"/>
+  <path d="m300 401 69-39 66 37-71 42z" fill="#ff8da7"/>
+  <path d="m300 401 64 37v-52l-64-36z" fill="url(#left)"/>
+  <path d="m364 438 71-39v-51l-71 38z" fill="url(#right)"/>
+  <path d="m300 350 64 36 71-38-65-39z" fill="#6be5da"/>
+  <path d="m300 350 64 36v-39l-64-37z" fill="#338dc2"/>
+  <path d="m364 386 71-38v-39l-71 38z" fill="#b14dc3"/>
+  <path d="m300 251 65-38 70 39-65 39z" fill="#49c6d5"/>
+  <path d="m300 251 65 40v95l-65-36z" fill="url(#left)"/>
+  <path d="m365 291 70-39v98l-70 36z" fill="url(#right)"/>
+  <path d="m300 251 65-38v78l-65 39z" fill="#40d4d2" opacity=".72"/>
+  <path d="m365 213 70 39v77l-70-38z" fill="#bd51c3" opacity=".72"/>
+  <path d="m319 261 28-17v21l-28 17z" fill="#77f7ec" opacity=".7"/>
+  <path d="m383 298 29 16v20l-29-16z" fill="#ffb4da" opacity=".68"/>
+  <path d="m319 332 28-16v20l-28 16z" fill="#f687c0" opacity=".7"/>
+  <path d="m381 370 32-17v16l-32 18z" fill="#ffcfaf" opacity=".68"/>
+  <path d="M177 496h244l-31 42H208z" fill="#33dad5" opacity=".34" filter="url(#reflection)"/>
+</svg>
